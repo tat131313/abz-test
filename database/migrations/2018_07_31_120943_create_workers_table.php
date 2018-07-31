@@ -19,7 +19,7 @@ class CreateWorkersTable extends Migration
             $table->string('position');
             $table->date('employment_date');
             $table->integer('salary');
-            $table->string('chief_id');
+            $table->integer('chief_id');
             $table->timestamps();
         });
     }
