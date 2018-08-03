@@ -18,8 +18,10 @@ class CreateWorkersTable extends Migration
             $table->string('name');
             $table->string('position');
             $table->date('employment_date');
-            $table->integer('salary');
-            $table->integer('chief_id');
+            $table->integer('salary')->nullable();
+            $table->integer('chief_id')->nullable();
+            $table->integer('hierarchy_level');
+            //$table->integer('chief_id')->nullable(); //img src
             $table->timestamps();
         });
     }
